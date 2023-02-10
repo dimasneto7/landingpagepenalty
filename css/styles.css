@@ -1,0 +1,108 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #121214;
+  color: #c4c4cc;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.imageLogo {
+  width: 300px;
+}
+
+.submitButton {
+  background-color: #009b4e;
+  width: 100%;
+  padding: 14px 0;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 700;
+  border: none;
+  border-radius: 5px;
+  opacity: 0.8;
+  transition: all 0.2s;
+  margin-top: 1rem;
+  margin-bottom: 200px;
+}
+
+.submitButton:hover {
+  opacity: 1;
+}
+
+.warning {
+  font-size: 0.7em;
+  margin: 0;
+  padding: 0;
+  height: 25px;
+  line-height: 20px;
+}
+
+.incomplete {
+  margin-bottom: 0;
+}
+
+.invisible {
+  display: none;
+}
+
+input {
+  width: 90%;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 5px;
+  margin-bottom: 10px;
+}
+
+#privacy {
+  margin-top: 25px;
+  width: 3%;
+  cursor: pointer;
+}
+
+label {
+  font-size: 0.8rem;
+}
+
+form a {
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+
+form p {
+  font-size: 0.8rem;
+  max-width: 480px;
+}
+
+#send {
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: #009b4e;
+  width: 260px;
+  border-radius: 7px;
+  display: block;
+  cursor: pointer;
+  margin: 0 auto 100px auto;
+  opacity: 0.8;
+  transition: all 0.2s;
+}
+#submit:hover {
+  opacity: 1;
+}

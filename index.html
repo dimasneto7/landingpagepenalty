@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="text-center mt-5">
+          <img
+            src="./images/penaltyLogo.svg"
+            alt="Logo Penalty"
+            class="imageLogo"
+          />
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-sm-10 col-md-6 col-lg-6">
+          <form action="" method="POST" id="form">
+            <input
+              type="text"
+              id="nome"
+              name="nome"
+              placeholder="Nome"
+              required
+            /><br />
+
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="E-mail"
+              required
+            /><br />
+
+            <input
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="Telefone"
+              required
+            /><br />
+
+            <div class="invisible warning" id="warning-phone">
+              <p>*Complete este campo para continuar</p>
+            </div>
+
+            <input
+              type="text"
+              id="cep"
+              name="cep"
+              placeholder="Cep"
+              data-mask="00000-000"
+              required
+            /><br />
+
+            <div class="invisible warning" id="warning-cep">
+              <p>*Complete este campo para continuar</p>
+            </div>
+
+            <input
+              type="text"
+              id="street"
+              name="street"
+              placeholder="Rua"
+              required
+            /><br />
+
+            <input
+              type="text"
+              id="addressNumber"
+              name="addressNumber"
+              placeholder="Número"
+              required
+            /><br />
+
+            <input
+              type="text"
+              id="neighborhood"
+              name="neighborhood"
+              placeholder="Bairro"
+              required
+            /><br />
+
+            <input
+              type="text"
+              id="city"
+              name="city"
+              placeholder="Cidade"
+              required
+            /><br />
+
+            <input
+              type="text"
+              id="uf"
+              name="uf"
+              placeholder="Estado"
+              required
+            /><br />
+
+            <input
+              type="checkbox"
+              id="privacy"
+              name="privacy"
+              value="privacy"
+              required
+            />
+            <label for="privacy"
+              >Aceite da
+              <a onClick="showPopup()">política de privacidade</a>.</label
+            ><br />
+            <p>
+              O preenchimento do formulário é totalmente opcional e a
+              participação não é obrigatória.<br />
+              As informações coletadas serão mantidas em segurança e não serão
+              compartilhadas.
+            </p>
+            <input type="submit" id="send" name="send" value="Enviar" />
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script defer src="js/jquery.mask.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  </body>
+</html>
